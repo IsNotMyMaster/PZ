@@ -1,0 +1,130 @@
+a{text-decoration: none;}
+.nav-row a{
+	color:white;
+	padding:0 25px;
+	text-align: center; 
+	border-right: 1px solid ;
+}
+
+.nav-row ul li{
+	display: block;
+		float: left;
+	list-style-type: none;
+}
+
+.nav-row {
+	background-color: black;
+}
+
+.nav{
+	background-color: black;
+	margin: 0 auto;
+}
+
+.main{
+	background-color: grey;
+}
+
+.main ul li{
+	padding-top: 5px;
+}
+.nav-row{
+	margin: 0 auto;
+}
+
+img{
+	height: auto;
+	max-width: 252px;
+}
+
+span.price p{
+	color:orange;
+	padding-left: 5px;
+	font-size: 15px;
+}
+
+figcaption{
+	color:black;
+	padding-left: 5px;
+	font-size: 25px;
+}
+
+figure{
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 8px;
+	margin-bottom: 30px;
+	-moz-transition: all .4s ease-out;
+ 	-o-transition: all .4s ease-out;
+ 	-webkit-transition: all .4s ease-out;
+}
+figure:hover{
+	-webkit-transform: scale(1.1);
+ 	-moz-transform: scale(1.1);
+ 	-o-transform: scale(1.1);
+}
+
+.center{
+	text-align: center;
+}
+
+span.name-firma{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.opisanie{
+	text-align: justify;
+	font-size: 14px;
+}
+
+.footer{
+	margin: 0 auto;
+	background-color: black;
+	color:white;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+.name-footer h3{
+	text-align: center;
+	color:orange;
+}
+
+.text a{
+	color:white;
+}
+
+span.header-opisanie{
+	text-align: justify;
+}
+
+span.velcom{
+	display: block;	
+}
+div.phones{
+	text-align: center;
+}
+div.podval{
+	background-color: grey;
+}
+
+span.rights{
+	float: left;
+	padding-left: 10px;
+}
+
+span.author{
+	float: right;
+	padding-right: 10px;
+}
+
+.header{
+	 background-color: #CDCCC6;
+}
+
+div.address-phone{
+	border-right: 1px solid #fff;
+}
