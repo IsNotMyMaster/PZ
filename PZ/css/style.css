@@ -12,6 +12,11 @@ img{
     height: auto;
 }
 
+a p{text-decoration: none;
+color: grey;
+}
+
+
 .nav-header{
 	background-color: #fff;	
 }
@@ -22,11 +27,11 @@ img.inter{
 }
 
 img.like{
-	padding: 2px;
+	padding: 1px;
 	border: 1px grey solid;
 }
 
-li.tovar{
+figure.tovar{
 	background-color: white;
 	border-left:2px grey solid;
 	border-bottom:2px grey solid;  
@@ -39,11 +44,13 @@ div.zagolovok{
 span.cena{
 	font-weight: bold;
 	font-size: 18px;
-	padding: 18px;
+	padding:18px 0 0 25px;
+	margin: 0 auto;
 }
 
+
 .hotkey{
-	padding:8px 8px 8px 0;
+	padding:12px 12px 12px 0;
 }
 
 p.type_tovar{
@@ -56,6 +63,11 @@ span.cena{
 ul.top li{
 	border: 1px grey solid;
 	padding: 0 36px;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
 }
 
 ul.top li.poisk{
@@ -85,3 +97,31 @@ p.abzac1{
 img.snimok{
 	border-bottom: 2px grey solid;
 }
+
+footer{
+	background-color: white;
+}
+
+ul.footer{
+	color: grey;
+}
+
+.search {
+    width: 300px; /* Ширина поля с кнопкой */
+    border: 1px solid grey; /* Параметры рамки */
+    min-height: 30px; /* Минимальная высота */
+   }
+   input[type="email"] {
+    border: none; /* Убираем рамку */
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+    width: 254px; /* Ширина поля */
+    vertical-align: middle; /* Выравнивание по середине */
+   }
+   input[type="submit"] {
+   	margin: 5px;
+    width: 30px; /* Ширина кнопки */
+    height: 30px; /* Высота кнопки */
+    border: none; /* Убираем рамку */
+    background: url(../images/sellkorzina.png) no-repeat 50% 50%; /* Параметры фона */
+   }
