@@ -150,7 +150,7 @@ ul.footer{
     width: 247px; /* Ширина поля */
     vertical-align: middle; /* Выравнивание по середине */
    }
-   input[type="submit"] {
+   input.submit-search {
    	margin: 5px;
     width: 30px; /* Ширина кнопки */
     height: 30px; /* Высота кнопки */
@@ -196,3 +196,26 @@ background-repeat:no-repeat;
 background-position:10px 10px  ;
  }
 
+.search-nav{
+	min-width: 466px;
+    line-height: 51px;
+}
+
+input[type="text"] {
+	line-height: 51px;
+    border: none; 
+    outline: none; 
+    -webkit-appearance: none; 
+    vertical-align: middle;
+    padding-left: 20px;
+   }
+
+
+   input.submit-poisk {
+   	margin-left: 15px;
+   	vertical-align: middle;
+    width: 30px; 
+    height: 30px; 
+    border: none; 
+    background: url(../images/poisk_img.png) no-repeat 50% 50%; 
+   }
