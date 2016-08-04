@@ -32,9 +32,11 @@ img.like{
 }
 
 figure.tovar{
+	min-height: 315px; 
 	background-color: white;
 	border-left:2px grey solid;
-	border-bottom:2px grey solid;  
+	border-bottom:2px grey solid; 
+
 }
 
 div.zagolovok{
@@ -57,11 +59,10 @@ p.type_tovar{
 	color:grey;
 }
 
-span.cena{
-}
 
 ul.top li{
-	border: 1px grey solid;
+	border-right: 1px grey solid;
+	border-bottom: 1px grey solid;
 	padding: 0 36px;
 }
 
@@ -125,3 +126,20 @@ ul.footer{
     border: none; /* Убираем рамку */
     background: url(../images/sellkorzina.png) no-repeat 50% 50%; /* Параметры фона */
    }
+
+   .work-panel{
+   	background-color: white;
+   }
+
+   .row-carousel,.carousel-inner,.carousel{
+   	max-height:400px;
+   	max-width: 893px;
+   }
+
+   .btn{
+   	max-width: 197px;
+   }
+
+ .featurette-image{
+ 	border-right:1px grey solid; 
+ }
