@@ -36,7 +36,11 @@ figure.tovar{
 	background-color: white;
 	border-left:2px grey solid;
 	border-bottom:2px grey solid; 
+}
 
+figure.tovar:hover{
+	transform: scale(1.03);
+ 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 div.zagolovok{
@@ -108,7 +112,7 @@ ul.footer{
 }
 
 .search {
-    width: 300px; /* Ширина поля с кнопкой */
+    width: 294px; /* Ширина поля с кнопкой */
     border: 1px solid grey; /* Параметры рамки */
     min-height: 30px; /* Минимальная высота */
    }
@@ -116,7 +120,7 @@ ul.footer{
     border: none; /* Убираем рамку */
     outline: none; /* Убираем свечение в Chrome и Safari */
     -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
-    width: 254px; /* Ширина поля */
+    width: 247px; /* Ширина поля */
     vertical-align: middle; /* Выравнивание по середине */
    }
    input[type="submit"] {
@@ -125,7 +129,7 @@ ul.footer{
     height: 30px; /* Высота кнопки */
     border: none; /* Убираем рамку */
     background: url(../images/sellkorzina.png) no-repeat 50% 50%; /* Параметры фона */
-   }
+   
 
    .work-panel{
    	background-color: white;
@@ -141,5 +145,14 @@ ul.footer{
    }
 
  .featurette-image{
- 	border-right:1px grey solid; 
+
  }
+
+ a.phone{
+ background-image:url("../images/mobile.png");
+background-repeat:no-repeat;
+background-position:0 10px  ;
+display:block;
+ }
+
+
