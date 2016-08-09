@@ -528,7 +528,7 @@ p.rules-left{
 	margin-left: 0;
 }
 
-hr{
+hr.indexhtml{
 	 border: none; /* Убираем границу */
     background-color: #303030; /* Цвет линии */
     color: red;
@@ -676,6 +676,11 @@ button#submit-like {
 	background:#4e4e4e ;
 	font-size: 18px;
    }
+
+button#submit-like:hover{
+	background-color: #f1eff1; 
+	color:black;
+}
 
    button#submit-sell {
 
