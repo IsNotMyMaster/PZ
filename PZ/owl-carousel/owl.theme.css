@@ -24,30 +24,27 @@
 	opacity: 0.5;
 } */
 .owl-prev{
-	color: #FFF;
+	height: 40px;
+	width: 30px;
 	position: absolute;
 	top:45%;
 	margin-left: 10px;
 	font-size: 12px;
 	filter: Alpha(Opacity=50);
 	opacity: 0.5;
-	border-right: 20px solid #000;
-	border-top: 11px solid transparent;
-border-bottom: 11px solid transparent;
+	background-image: url(../images/strelar.png);
 }
 
 .owl-next{
-	color: #FFF;
+	height: 40px;
+	width: 30px;
 	position: absolute;
 	margin-left: 680px;
 	top:45%;
 	font-size: 12px;
-	background: #fff;
 	filter: Alpha(Opacity=50);
 	opacity: 0.5;
-	border-left: 20px solid #000;
-	border-top: 11px solid transparent;
-border-bottom: 11px solid transparent;
+	background-image: url(../images/strela.png);
 }
 
 /* Clickable class fix problem with hover on touch devices */
