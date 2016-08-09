@@ -21,6 +21,8 @@
 </head>
 <body>
 
+
+
 	<div class="container block">
 		<div class="row feuterette">
 		
@@ -64,85 +66,67 @@
 		</div>
 	</div>
 
-	<div class="container">
-		<div class="row ">
-			<div class="col-md-8 col-sm-8 ">
-				<div class="tovar-window">
-					<div class="tovar-image">
-						<a href="#"><img src="images/magazin.png" style="width:100%; max-height:352px"></a>
-					</div>
-					<caption>
-						<a href="#"><img src="images/krovati.png" ></a>
-						<a href="#"><img src="images/krovati.png" ></a>
-						<a href="#"><img src="images/krovati.png" ></a>
-						<a href="#"><img src="images/krovati.png" ></a>
-					</caption>
+	<div class="container block">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="imagination">
+					<div class="commit">
+					    	<b>-15%</b>
+							<p id="sell">Большая<br>распродажа</p>
+					    	<input type="button" id="View" value="Показать"></input>
+					</div>	
 				</div>
-				<div class="harkota-otzivi"> 
-				<ul class="nav nav-tabs">
-					<li class="active"><a data-toggle="tab" href="#panel1">Характеристика</a></li>
-					<li><a data-toggle="tab" href="#panel2">Отзывы</a></li>
-				</ul>	
-				
-						<div class="tab-content">
-							  <div id="panel1" class="tab-pane fade in active">
-							  <table>
-									<tr class="green"><th class="name">123</th><th class="opis">123</th></tr>
-									<tr><th class="name">123</th><th class="opis">123</th></tr>
-									<tr class="green"><th class="name">123</th><th class="opis">123</th></tr>
-									<tr><th class="name">123</th><th class="opis">123</th></tr>
-									<tr class="green"><th class="name">123</th><th class="opis">123</th></tr>
-								</table>
-							  </div>
-							  <div id="panel2" class="tab-pane fade">
-							    <table>
-									<tr class="green"><th class="name">123</th><th class="opis">123</th></tr>
-									<tr><th class="name">123</th><th class="opis">123</th></tr>
-									<tr class="green"><th class="name">123</th><th class="opis">123</th></tr>
-									<tr><th class="name">123</th><th class="opis">123</th></tr>
-									<tr class="green"><th class="name">123</th><th class="opis">123</th></tr>
-								</table>
-							  </div>
-						</div>
-				
-				
-				</div>
-			</div>	
-				<div class="col-md-4 col-sm-4 tovar-panel">
-					<div class="formlist">
-						<h3 class="tovar-zagolovok">Матрасc Guleftec</h3><hr>
-					<form role="menu" class="select-menu">
-					<span class="pull-left cena-tovar ">6 307 900 <span class="small">руб</span></span>
-					</div>
-						<select name="razmer" class="tovarlist" size="1"  >
-						    <option selected value="size1" disabled>220x80</option>
-						    <option value="size2">220x80</option>
-						    <option value="size3">220x80</option>
-							<option value="size4">220x80</option>
-						</select>	
-						<div class="sub-buttons">
-						 	<input id="Move-tovar" type="submit" value="Добавить в корзину">
-						 	<button type="submit" value="" class="fa fa-heart-o  fa-inverse center " id="submit-like"></button>	
-					 	</div>	
-			
-			<div class="harka">
-				<img src="images/harkota.png" class="img-harka">
-			</div>
-			<div class="message">
-				<h5>Описание</h5>
-				<p class="abzac1 abzac">Давайте сравним ортопедический матрас с пружинным блоком и без него. Первая конструкция состоит из блока независимых пружин, кажая их которых упакована в индивидуальный чехол. </p>
-				<p class="abzac2 abzac">Благодаря этому матрас прослужит долго и бесшумно, а польза для организма будет ощутимой с первых дней эксплуатациию Продукция без пружин либо буспружинные матрасы изготавливается из натурального латекса, который имеет свойтсво «дышать» .</p>
 			</div>
 		</div>
 	</div>
 
-	<section class="">
-	<div class="container block">
-	<div class="row ">
-		<h3 class="text-center razdel">Новое поступление</h3>
-		<hr>
-			<ul>
-					<div class="col-md-3 col-sm-3 fig">
+	<div class="container form-panel block">
+		<div class="row ">
+		    <div class="col-md-3 col-sm-3 work-panel">
+		    <div class="formlist">
+				<h4 class="text-center podbor-zagolovok">Каталог</h4>
+					<ul>
+						<li><a href="">Матрасы</a></li>
+						<li><a href="">Подушки</a></li>
+						<li><a href="">Наматрасники</a></li>
+					</ul>	
+				</div>
+		    	<div class="formlist">
+				<h4 class="text-center podbor-zagolovok">Подобрать матрас</h4>
+				<form role="menu" class="select-menu">
+					<select name="razmer" class="menulist" size="1"  >
+					    <option selected value="size1" disabled>Размер</option>
+					    <option value="size2">2x1</option>
+					    <option value="size3">3х2</option>
+						<option value="size4">4х3</option>
+					</select>	<br>
+					<select name="jestkost" class="menulist" size="1" >
+					    <option selected value="jestkost1" disabled>Жесткость</option>
+					    <option value="jestkost2">Лайт</option>
+					    <option value="jestkost3">Мидл</option>
+						<option value="jestkost4">Ад</option>
+					</select>	<br>
+					<select name="block" class="menulist" size="1" >
+					    <option selected value="block1" disabled>Тип блока</option>
+					    <option value="block2">1</option>
+					    <option value="block3">2</option>
+						<option value="block4">3</option>
+					</select>	<br>
+				    <select name="brend" class="menulist" size="1" >
+					    <option selected value="brend1" disabled>Бренд</option>
+					    <option value="brend2">Тотал</option>
+					    <option value="brend3">Империя</option>
+						<option value="brend4">Стайлиш</option>
+					</select>	
+				 	<input id="Move" type="submit" value="Подобрать"></input>
+
+				</form>
+				</div>
+				</div>
+				<div class="col-md-9">
+					<h4 class="text-center">Матрасы</h4>
+
+					<div class="col-md-4 col-sm-4">
 					<figure class=" tovar">
 					<div class="zagolovok">
 						<h5><a href="#" class="tui">Матрас DreamLine<br>
@@ -161,7 +145,7 @@
 						</figcaption>
 					</figure>
 					</div>
-					<div class="col-md-3 col-sm-3 fig">
+					<div class="col-md-4 col-sm-4">
 					<figure class=" tovar">
 					<div class="zagolovok">
 						<h5><a href="#" class="tui">Матрас DreamLine<br>
@@ -180,7 +164,7 @@
 						</figcaption>
 					</figure>
 					</div>
-					<div class="col-md-3 col-sm-3 fig">
+					<div class="col-md-4 col-sm-4">
 					<figure class=" tovar">
 					<div class="zagolovok">
 						<h5><a href="#" class="tui">Матрас DreamLine<br>
@@ -199,7 +183,7 @@
 						</figcaption>
 					</figure>
 					</div>
-					<div class="col-md-3 col-sm-3 fig">
+					<div class="col-md-4 col-sm-4">
 					<figure class=" tovar">
 					<div class="zagolovok">
 						<h5><a href="#" class="tui">Матрас DreamLine<br>
@@ -218,11 +202,55 @@
 						</figcaption>
 					</figure>
 					</div>
-											
-		</div>	
-		</div>	
-	</section>
+					<div class="col-md-4 col-sm-4">
+					<figure class=" tovar">
+					<div class="zagolovok">
+						<h5><a href="#" class="tui">Матрас DreamLine<br>
+						Balance Дачный TFK</a></h5>
+						<p class="type_tovar"><a href="#" class="tui">Матрасы</a></p>
+						</div>
+						<a href="#"><img src="images/Снимок.png" class="snimok"></a>
+						<figcaption>
+						<span class="pull-left cena hotkey">6 307 900 <span class="small">руб</span></span>
+						<a href="#" class="pull-right hotkey" role="button">
+							<img src="images/sez.png" class="inter korzina"></a>
+						</a>
+						<a href="#" class="pull-right hotkey" role="button">
+							<img src="images/ez.png" class="inter like"></a>
 
+						</figcaption>
+					</figure>
+					</div>
+					<div class="col-md-4 col-sm-4">
+					<figure class=" tovar">
+					<div class="zagolovok">
+						<h5><a href="#" class="tui">Матрас DreamLine<br>
+						Balance Дачный TFK</a></h5>
+						<p class="type_tovar"><a href="#" class="tui">Матрасы</a></p>
+						</div>
+						<a href="#"><img src="images/Снимок.png" class="snimok"></a>
+						<figcaption>
+						<span class="pull-left cena hotkey">6 307 900 <span class="small">руб</span></span>
+						<a href="#" class="pull-right hotkey" role="button">
+							<img src="images/sez.png" class="inter korzina"></a>
+						</a>
+						<a href="#" class="pull-right hotkey" role="button">
+							<img src="images/ez.png" class="inter like"></a>
+
+						</figcaption>
+					</figure>
+					</div>
+					<div class="pagination-cat">
+					<ul class="pagination">
+					  <li><a href="#">1</a></li>
+					  <li><a href="#">2</a></li>
+					  <li><a href="#">3</a></li>
+					  <li><a href="#">4</a></li>
+					  <li><a href="#">5</a></li>
+					</ul>
+					</div>
+				</div>
+</div>
 	</div>
 	<footer>
 		<div class="container underlord">

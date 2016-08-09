@@ -38,7 +38,7 @@ button#submit-search {
    }
 
 span.fa-stack:hover i.fa{
-	color: black; 
+	color: #D7D0D0; 
 }
 
 ul li{
@@ -289,7 +289,20 @@ b{
 	top:65%;
 }
 
-#View:hover{
+#View:hover{background:#FCADAB;}
+
+.view{
+	width:148px;
+	height:38px;
+	color: #fff;
+	font:bold 15px Ubuntu;
+	background:#f22510;
+	margin-left: 50px;
+	border:none;
+	margin-bottom: 30px;
+}
+
+.view:hover{
 	background:#FCADAB;
 }
 
@@ -745,3 +758,38 @@ th.opis{
 	width: 395px;
 }
 
+.imagination{
+	height:200px;
+	max-width:940px ;
+	background-image: url(../images/turtle.png);
+}
+
+.commit-razdel{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 30px;
+	letter-spacing: -2px;
+	margin-bottom: 5px;
+}
+
+.sub-commit{
+	padding: 6px 0 0 50px;
+}
+
+#slogon{
+	word-spacing: 6px;
+	padding-bottom:10px;
+}
+
+.categori-list{
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.categori-list li {
+	padding: 15px 0;
+}
+
+.categori-list li:hover {
+	background-color: #D6CCCC;
+}
