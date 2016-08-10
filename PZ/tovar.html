@@ -20,8 +20,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
-	<div class="container block">
+<div class="container block">
 		<div class="row feuterette">
 		
 			<div class="col-md-2 col-sm-2 col-lg-2 col-xs-2 logo">
@@ -41,11 +40,11 @@
 
 						</form>
 					</div>
-					<div class=" topheader like">
-						<a href="#" class="alike">Понравились</a>
+					<div class=" topheader blike">
+						<a href="#" class="fa fa-heart-o badge-like"><span class="badge-like-word">Понравились</span><span class="badge">10</span></a>
 					</div>
-					<div class=" topheader sell">
-						<a href="#" class="asell">Корзина</a>
+					<div class=" topheader bsell">
+						<a href="#" class="fa fa-shopping-cart badge-sell"><span class="badge-sell-word">Корзина</span><span class="badge-s">10</span></a>
 					</div>
 
 			</div>
@@ -64,7 +63,7 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container block">
 		<div class="row ">
 			<div class="col-md-8 col-sm-8 ">
 				<div class="tovar-window">
@@ -87,20 +86,20 @@
 						<div class="tab-content">
 							  <div id="panel1" class="tab-pane fade in active">
 							  <table>
-									<tr class="green"><th class="name">123</th><th class="opis">123</th></tr>
-									<tr><th class="name">123</th><th class="opis">123</th></tr>
-									<tr class="green"><th class="name">123</th><th class="opis">123</th></tr>
-									<tr><th class="name">123</th><th class="opis">123</th></tr>
-									<tr class="green"><th class="name">123</th><th class="opis">123</th></tr>
+									<tr class="green"><th class="name">Ткань</th><th class="opis">Супер прочный жаккард с антибактериальной пропиткой</th></tr>
+									<tr><th class="name">Высота</th><th class="opis">14 см</th></tr>
+									<tr class="green"><th class="name">Ткань</th><th class="opis">Супер прочный жаккард с антибактериальной пропиткой</th></tr>
+									<tr><th class="name">Жесткость</th><th class="opis">Средняя</th></tr>
+									<tr class="green"><th class="name">Преимущество</th><th class="opis">Дарит крепкий здоровый сон</th></tr>
 								</table>
 							  </div>
 							  <div id="panel2" class="tab-pane fade">
 							    <table>
-									<tr class="green"><th class="name">123</th><th class="opis">123</th></tr>
-									<tr><th class="name">123</th><th class="opis">123</th></tr>
-									<tr class="green"><th class="name">123</th><th class="opis">123</th></tr>
-									<tr><th class="name">123</th><th class="opis">123</th></tr>
-									<tr class="green"><th class="name">123</th><th class="opis">123</th></tr>
+									<tr class="green"><th class="name">Ткань</th><th class="opis">Супер прочный жаккард с антибактериальной пропиткой</th></tr>
+									<tr><th class="name">Высота</th><th class="opis">14 см</th></tr>
+									<tr class="green"><th class="name">Ткань</th><th class="opis">Супер прочный жаккард с антибактериальной пропиткой</th></tr>
+									<tr><th class="name">Жесткость</th><th class="opis">Средняя</th></tr>
+									<tr class="green"><th class="name">Преимущество</th><th class="opis">Дарит крепкий здоровый сон</th></tr>
 								</table>
 							  </div>
 						</div>
@@ -110,20 +109,21 @@
 			</div>	
 				<div class="col-md-4 col-sm-4 tovar-panel">
 					<div class="formlist">
-						<h3 class="tovar-zagolovok">Матрасc Guleftec</h3><hr>
-					<form role="menu" class="select-menu">
-					<span class="pull-left cena-tovar ">6 307 900 <span class="small">руб</span></span>
+						<h3 class="tovar-zagolovok">Матрасc Guleftec</h3>
 					</div>
+					<div class="cena-select">
+					<span class="pull-left cena-tovar ">4 600 000 <span class="small rub">руб</span><span>
+						
 						<select name="razmer" class="tovarlist" size="1"  >
 						    <option selected value="size1" disabled>220x80</option>
 						    <option value="size2">220x80</option>
 						    <option value="size3">220x80</option>
 							<option value="size4">220x80</option>
 						</select>	
-						<div class="sub-buttons">
+						</div>
+					
 						 	<input id="Move-tovar" type="submit" value="Добавить в корзину">
 						 	<button type="submit" value="" class="fa fa-heart-o  fa-inverse center " id="submit-like"></button>	
-					 	</div>	
 			
 			<div class="harka">
 				<img src="images/harkota.png" class="img-harka">
@@ -135,11 +135,11 @@
 			</div>
 		</div>
 	</div>
-
-	<section class="">
+</div>
+	<section>
 	<div class="container block">
 	<div class="row ">
-		<h3 class="text-center razdel">Новое поступление</h3>
+		<h3 class="text-center razdel">Новое поступление</h3><hr class="indexhtml">
 		<hr>
 			<ul>
 					<div class="col-md-3 col-sm-3 fig">

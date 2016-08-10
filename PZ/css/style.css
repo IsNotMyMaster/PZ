@@ -79,10 +79,11 @@ div.topheader{
 	-o-transition: all .2s ease-out;
 	-webkit-transition: .2s ease-out;
 }
-}
+
+
 
 div.topheader:hover{
-	color: #3096c6;
+	background-color:#f1eff1; 
 }
 
 div.lowheader{
@@ -126,7 +127,7 @@ width: 166px;
  }
 
 div.sell{
-background-image:url("../images/korzina.png");
+background-image:url("../images/sez.png") red;
 background-repeat:no-repeat;
 background-position: 20px;
 text-align: center;
@@ -189,6 +190,7 @@ select.menulist{
 	height: 36px;
 	vertical-align: middle;
 	margin-bottom:36px; 
+	border: 1px solid #f1eff1;
 }
 
 #Move{
@@ -207,7 +209,7 @@ select.menulist{
 
 
 #Move-tovar{
-	margin-bottom: 10px;
+	margin: 20px 20px 30px 20px ;
 	width:200px;
 	height:40px;
 	color: #fff;
@@ -657,32 +659,39 @@ div.tovar-panel{
 	width: 313px;
 	font-family: 'Ubuntu', sans-serif;
 	background-color: #fffeff;
-	padding:0 20px;
 }
 
 select.tovarlist{
 	width: 118px;
 	height: 36px;
 	vertical-align: middle;
-	margin-bottom:36px; 
+	font-size: 14px;
 }
+
+
 
 span.cena-tovar{
-	font-weight: bold;
-	font-size: 20px;
+	font-weight: lighter;
+	font-size: 24px;
 	margin: 0 auto;
-	padding-right: 24px;
+	padding: 30px 18px 30px 29px;
+	border-bottom: 1px solid #f1eff1;
 }
 
-h3.tovar-zagolovok{
-	margin: 25px 0;
+.rub{
+	font-size: 16px;
+}
+
+.tovar-zagolovok{
+	margin:0;
+	padding: 28px 0 28px 20px;
+	border-bottom: 1px solid #f1eff1;
 	color:#303030;
 	font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
 }
 
 button#submit-like {
-   	margin-left: 20px;
     width: 40px; /* Ширина кнопки */
     line-height: 38px; /* Высота кнопки */
     border: none; /* Убираем рамку */
@@ -708,14 +717,14 @@ button#submit-like:hover{
 
 img.img-harka{
 	padding: 0;
-	margin: 0;
+	margin-left: 20px;
 }   
 
 div.message{
 	height: auto;
 	max-width: 276px;
-	padding-bottom: 70px;
-	padding-top: 22px;
+	padding: 22px 0 6px 20px;
+	text-align: justify;
 }
 
 div.tovar-image{
@@ -729,8 +738,8 @@ div.harkota-otzivi{
 
 }
 
-div.sub-buttons{
-	margin-bottom: 26px;
+.sub-buttons{
+	padding: 22px 0 22px 22px;
 }
 
 table{
@@ -752,10 +761,12 @@ tr.green{
 th.name{
 	width: 185px;
 	padding-left: 14px;
+	 font-weight: 600;
 }
 
 th.opis{
 	width: 395px;
+	font-weight: lighter;
 }
 
 .imagination{
@@ -793,3 +804,107 @@ th.opis{
 .categori-list li:hover {
 	background-color: #D6CCCC;
 }
+
+
+.paginator {
+    margin: 30px auto;
+    padding: 10px;
+    white-space: nowrap;
+    background: #ecf0f1;
+}
+
+.paginator a,
+.paginator span {
+    display: inline-block;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    background: #ffffff;
+}
+
+.paginator .current {
+    background-color: #16a085;
+}
+
+.paginator .disabled {
+     opacity: 0.3;
+}
+
+.paginator a:hover {
+    background-color: #dadada;
+}
+
+.paginator a.active{
+	background-color:#22a7f0;
+}
+
+
+.badge{
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	text-align: center;
+	top:11%;
+	right: 32%;
+	background-color: red;
+	color: white;
+	font-size: 9px;
+	border-radius: 7px;
+}
+
+.badge-like-word{
+	padding-left: 8px;
+	font:bold 14px Ubuntu;
+	color:black;
+}
+
+.badge-like{
+	text-align: right;
+	color:#24a6f3;
+	font-size: 20px;
+	padding-left: 30px;
+	text-decoration: none;
+}
+
+.blike{
+	width: 166px;
+}
+
+.badge-sell-word{
+	padding-left: 8px;
+	font:bold 14px Ubuntu;
+	color:black;
+}
+
+.badge-sell{
+	text-align: right;
+	color:#24a6f3;
+	font-size: 20px;
+	padding-left: 30px;
+	text-decoration: none;
+}
+
+.badge-s{
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top:11%;
+	right: 11%;
+	background-color: red;
+	color: white;
+	font-size: 9px;
+	border-radius: 7px;
+}
+
+.bsell{
+	width: 139px;
+	border: none;
+}
+
