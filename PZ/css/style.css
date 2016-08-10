@@ -23,7 +23,7 @@ div.like:hover a{
 }
 
 div.phone:hover a{
-	color:#3096c6;
+	color:#000;
 }
 
 button#submit-search {
@@ -38,7 +38,8 @@ button#submit-search {
    }
 
 span.fa-stack:hover i.fa{
-	color: #D7D0D0; 
+	opacity: 0.7
+	; 
 }
 
 ul li{
@@ -65,7 +66,7 @@ div.upperlvl{
 }
 
 div.lowlvl{
-	width: 800px;
+	width: 799px;
 	height: 49px;
 	background-color:#fffeff;
 	color:#303030;
@@ -75,6 +76,7 @@ div.topheader{
 	height: 49px;
 	border-right: 1px solid #f1eff1;
 	display: inline-block;
+	float: left;
 	-moz-transition: all .2s ease-out;
 	-o-transition: all .2s ease-out;
 	-webkit-transition: .2s ease-out;
@@ -82,21 +84,38 @@ div.topheader{
 
 
 
-div.topheader:hover{
-	background-color:#f1eff1; 
+.phone:hover, .blike:hover, .bsell:hover{
+	background-color:#E1E3DE; 
 }
 
-div.lowheader{
-	line-height: 49px;
-	vertical-align: middle;
 
+.good li{
+	display: inline-block;
+	float: left;
+	padding: 15px 23px;
 }
 
-a.tui:hover{
-	color: #3096c6;
+
+.lowheader{
+-moz-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	-webkit-transition: .2s ease-out;
 }
 
- p.type_tovar:hover a.tui{
+.lowheader:hover{
+	background-color:#E1E3DE; 
+	color:#000;
+}
+
+.navbar-nav:hover {
+	background-color:#B7B3B3; 
+}
+
+ h5:hover a.tui{
+ 	color: #3096c6;
+ }
+
+p.type_tovar:hover a.tui{
 	color: #3096c6;
 }
 
@@ -105,9 +124,15 @@ div.topheader a{
 	vertical-align: middle;
 }
 
+.mobile-phone{
+	font-size: 28px;
+	padding-right: 10px;
+	color:#24a6f3;
+	vertical-align: middle;
+}
+
 div.phone{
-background-image:url("../images/mobile.png");
-background-repeat:no-repeat;
+
 text-align: center;
 background-position: 20px;
 width: 186px;
@@ -135,10 +160,6 @@ border: none;
 width: 135px;
  }
 
-a.phone-number{
-	padding-left: 27px;
-}
-
 a.alike{
 	padding-left: 30px;
 }
@@ -149,7 +170,7 @@ a.asell{
 
 input[type="text"] {
 	line-height: 47px;
-	width: 259px;
+	width: 268px;
     border: none; 
     outline: none; 
     -webkit-appearance: none; 
@@ -170,6 +191,7 @@ button#submit-poisk {
 
 button#submit-poisk:hover{
 	font-size: 21px;
+	background-color: white;
 }
 
 div.poisk{
@@ -178,7 +200,7 @@ div.poisk{
 }
 
 div.work-panel{
-	width: 218px;
+	width: 233px;
 	font-family: 'Ubuntu', sans-serif;
 	background-color: #fffeff;
 	margin-right: 2px;
@@ -186,11 +208,20 @@ div.work-panel{
 }
 
 select.menulist{
+	outline: none;
 	width: 196px;
 	height: 36px;
 	vertical-align: middle;
 	margin-bottom:36px; 
 	border: 1px solid #f1eff1;
+}
+
+option{
+	outline: none;
+	width: auto;
+	height: 36px;
+	vertical-align: middle;
+	padding-left: 18px; 
 }
 
 #Move{
@@ -209,12 +240,14 @@ select.menulist{
 
 
 #Move-tovar{
-	margin: 20px 20px 30px 20px ;
-	width:200px;
+	margin: 20px 10px 30px 20px ;
+	text-align: center;
+	padding-left: 46px;
+	width:220px;
 	height:40px;
 	color: #fff;
 	font:bold 15px Ubuntu;
-	background:#24a6f3;
+	background:url(../images/nado.png) #24a6f3 no-repeat;
 	border:none;
 }
 
@@ -314,8 +347,6 @@ p#sell{
 	top:43%;
 	position: absolute;
 }
-
-
 
 
 
@@ -428,11 +459,8 @@ div.fig{
 }
 
 div.fig:hover{
-	-webkit-transform: scale(1.03);
- 	-moz-transform: scale(1.03);
- 	-o-transform: scale(1.03);
- 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
- 	z-index: 2;
+ 	box-shadow: 0 0 30px rgba(0,0,0,0.7);
+ 	z-index: 700;
 }
 
 span.cena{
@@ -456,12 +484,6 @@ div.upperlvl,div.lowlvl a{
 .hotkey{
 	padding:10px 10px 10px 0;
 }
-
-
-p.type_tovar a.tui{
-	color:#f1eff1;
-}
-
 
 
 .dropdown-toggle{
@@ -666,6 +688,7 @@ select.tovarlist{
 	height: 36px;
 	vertical-align: middle;
 	font-size: 14px;
+	border: 1px solid #f1eff1;
 }
 
 
@@ -674,7 +697,7 @@ span.cena-tovar{
 	font-weight: lighter;
 	font-size: 24px;
 	margin: 0 auto;
-	padding: 30px 18px 30px 29px;
+	padding: 30px 18px 30px 20px;
 	border-bottom: 1px solid #f1eff1;
 }
 
@@ -692,9 +715,9 @@ span.cena-tovar{
 }
 
 button#submit-like {
-    width: 40px; /* Ширина кнопки */
-    line-height: 38px; /* Высота кнопки */
-    border: none; /* Убираем рамку */
+    width: 40px; 
+    line-height: 39px; 
+    border: none; 
 	background:#4e4e4e ;
 	font-size: 18px;
    }
@@ -786,6 +809,11 @@ th.opis{
 	padding: 6px 0 0 50px;
 }
 
+.qwe{
+	margin-left: 0;
+	max-width: 705px; 
+}
+
 #slogon{
 	word-spacing: 6px;
 	padding-bottom:10px;
@@ -799,18 +827,23 @@ th.opis{
 
 .categori-list li {
 	padding: 15px 0;
+	text-align: left;
+	padding-left: 45px;
 }
 
 .categori-list li:hover {
 	background-color: #D6CCCC;
 }
 
+h3.razdel-post{
+margin-top: 50px;
+}
 
 .paginator {
-    margin: 30px auto;
-    padding: 10px;
+
     white-space: nowrap;
-    background: #ecf0f1;
+    background: white;
+    padding: 10px 175px;
 }
 
 .paginator a,
@@ -846,17 +879,19 @@ th.opis{
 }
 
 
-.badge{
-	width: 15px;
-	height: 15px;
+.likeCircle{
 	position: absolute;
-	text-align: center;
-	top:11%;
+	top:13%;
 	right: 32%;
-	background-color: red;
+	border-radius: 50%;
+	max-height: 15px;
+	max-width: 15px;
+    padding: 2px;
+    background-color: red;
 	color: white;
-	font-size: 9px;
-	border-radius: 7px;
+    text-align: center;
+
+    font: 10px Arial, sans-serif;
 }
 
 .badge-like-word{
@@ -869,8 +904,9 @@ th.opis{
 	text-align: right;
 	color:#24a6f3;
 	font-size: 20px;
-	padding-left: 30px;
+	padding-left: 28px;
 	text-decoration: none;
+	vertical-align: middle;
 }
 
 .blike{
@@ -887,24 +923,83 @@ th.opis{
 	text-align: right;
 	color:#24a6f3;
 	font-size: 20px;
-	padding-left: 30px;
+	padding-left: 26px;
 	text-decoration: none;
+	vertical-align: middle;
 }
 
-.badge-s{
-	width: 15px;
-	height: 15px;
-	position: absolute;
-	top:11%;
-	right: 11%;
-	background-color: red;
-	color: white;
-	font-size: 9px;
-	border-radius: 7px;
-}
+
 
 .bsell{
 	width: 139px;
 	border: none;
 }
 
+.sellCircle{
+	position: absolute;
+	top:13%;
+	right: 11%;
+	border-radius: 50%;
+	width: 15px;
+    height: 15px;
+    padding: 2px;
+    background-color: red;
+	color: white;
+    text-align: center;
+    font: 10px Arial, sans-serif;
+}
+
+.harka{
+	margin-left: 20px;
+}
+
+.harka-table-row{
+	line-height: 15px;
+margin-bottom: 10px;	
+border-bottom: 1px dotted #CCC;
+}
+
+.probel{
+	border: hidden;
+}
+
+.harka-name{
+ 	width: 180px;
+ 	color: #c2c2c2;
+ 	padding: 0;
+ 	margin: 0;
+}
+
+.harka-opis{
+	color:#363636;
+	border:none;
+}
+
+.chieftan{
+	margin-bottom: 2px;
+}
+
+.bread { 
+	list-style: none; 
+	overflow: hidden; 
+	font: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	margin: 23px 0;
+	padding: 0;
+}
+.bread li { 
+	float: left; 
+}
+.bread li a {
+	color: #bebebe;
+	text-decoration: none;                 
+	position: relative; 
+	display: block;
+	float: left;
+}
+.bread li a:hover{
+	color: #3096c6;
+}
+.bread li a:after { 
+	content: "→"; 
+}
