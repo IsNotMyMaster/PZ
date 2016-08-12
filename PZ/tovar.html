@@ -18,6 +18,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/photobox.css">
+
 </head>
 <body>
 <div class="container block chieftan">
@@ -31,29 +33,29 @@
 			
 			<div class="row upperlvl">
 					<div class=" topheader phone">
-						<a href="tel:+375291747895" class="phone-number"><i class="fa fa-mobile mobile-phone" aria-hidden="true"></i>+375 29 174 78 95</a>
+						<a href="tel:+375291747895" class="phone-number" style="padding: 16px 17px 15px 30px;"><i class="fa fa-mobile mobile-phone" aria-hidden="true"></i>+375 29 174 78 95</a>
 					</div>
 					<div class=" poisk topheader ">
 						<form>
 							<input type="text" class="searchform" placeholder="Поиск">
 							<button type="submit" value="" class="fa fa-search  fa-inverse center " id="submit-poisk"></button>
-
+							<span class="tooltiptext">Для поиска введите название товара, нажмите Enter или на эту кнопку</span>
 						</form>
 					</div>
 					<div class=" topheader blike">
-						<a href="#" ><i class="fa fa-heart-o badge-like" aria-hidden="true"></i><span class="badge-like-word">Понравились</span><span class="likeCircle">10</span></a>
+						<a href="#" style="padding: 16px 12px 16px 0;"><i class="fa fa-heart-o badge-like" aria-hidden="true"></i><span class="badge-like-word">Понравились</span><span class="likeCircle">10</span></a>
 					</div>
 					<div class=" topheader bsell">
-						<a href="#"><i class="fa fa-shopping-cart badge-sell" aria-hidden="true"></i><span class="badge-sell-word">Корзина</span><span class="sellCircle">10</span></a>
+						<a href="#" style="padding: 16px 26px 16px 0;"><i class="fa fa-shopping-cart badge-sell" aria-hidden="true"></i><span class="badge-sell-word">Корзина</span><span class="sellCircle">10</span></a>
 					</div>
 
 			</div>
 			<div class="row lowlvl">
 				<div >
 					<ul class="good">
-						<li class="lowheader"><a href="tel:+375291747895">Каталог</a></li>
-						<li class="lowheader"><a href="tel:+375291747895">Новости</a></li>
-						<li class="lowheader"><a href="tel:+375291747895">Контакты</a></li>
+						<li class="lowheader"><a href="#">Каталог</a></li>
+						<li class="lowheader"><a href="#">Новости</a></li>
+						<li class="lowheader"><a href="#">Контакты</a></li>
 					</ul>
 				</div>
 
@@ -63,7 +65,24 @@
 		</div>
 	</div>
 
-	<div class="container block chieftan">
+<div id="myModal" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+<h3 class="tovar-zagolovok">Матрасc Guleftec</h3>
+<img src="images/rus.png" style="width:100%; max-height:352px">
+</div>
+	<div class="modal-body"><h5>Описание</h5>
+		<p class="abzac1 abzac">Давайте сравним ортопедический матрас с пружинным блоком и без него. Первая конструкция состоит из блока независимых пружин, кажая их которых упакована в индивидуальный чехол. </p>
+		<p class="abzac2 abzac">Благодаря этому матрас прослужит долго и бесшумно, а польза для организма будет ощутимой с первых дней эксплуатациию Продукция без пружин либо буспружинные матрасы изготавливается из натурального латекса, который имеет свойтсво «дышать» .</p></div>
+	<div class="modal-footer">
+		<button class="btn btn-info pull-left" type="button" onclick="">Перейти</button>
+		<button class="btn btn-danger pull-right" type="button" data-dismiss="modal">Закрыть</button></div>
+</div>
+</div>
+</div>
+
+	<div class="container block chieftan star">
 		<ol class="bread">
 		  <li class="bread-item"><a href="#">Главная</a></li>
 		  <li class="bread-item"><a href="#">Каталог</a></li>
@@ -77,14 +96,13 @@
 			<div class="col-md-8 col-sm-8 ">
 				<div class="tovar-window">
 					<div class="tovar-image">
-						<a href="#"><img src="images/rus.png" style="width:100%; max-height:352px"></a>
+						<a href="#"><img src="images/rus.png" style="width:100%; max-height:352px" data-toggle="modal" data-target="#myModal"></a>
 					</div>
-					<caption>
-						<a href="#"><img src="images/krovati.png" ></a>
-						<a href="#"><img src="images/krovati.png" ></a>
-						<a href="#"><img src="images/krovati.png" ></a>
-						<a href="#"><img src="images/krovati.png" ></a>
-					</caption>
+					<ul class="gallery">
+					<li><a href="images/bmw.jpg" title="Image 001"><img src="images/krovati.png" /></a></li>
+					<li><a href="images/bmw.jpg" title="Image 002"><img src="images/krovati.png" /></a></li>
+					<li><a href="images/bmw.jpg" title="Image 003"><img src="images/krovati.png" /></a></li>
+					</ul>
 				</div>
 				<div class="harkota-otzivi"> 
 				<ul class="nav nav-tabs">
@@ -103,12 +121,14 @@
 								</table>
 							  </div>
 							  <div id="panel2" class="tab-pane fade">
-							    <table>
-									<tr class="green"><th class="name">Ткань</th><th class="opis">Супер прочный жаккард с антибактериальной пропиткой</th></tr>
-									<tr><th class="name">Высота</th><th class="opis">14 см</th></tr>
-									<tr class="green"><th class="name">Ткань</th><th class="opis">Супер прочный жаккард с антибактериальной пропиткой</th></tr>
-									<tr><th class="name">Жесткость</th><th class="opis">Средняя</th></tr>
-									<tr class="green"><th class="name">Преимущество</th><th class="opis">Дарит крепкий здоровый сон</th></tr>
+							    <table id="tab1" class="sortable">
+									<tr ><th class="opis">Супер</th></tr>
+									   <tbody>
+    									</tbody>
+										<form action="" id="add_persons" method="post" onsubmit="addRow();return false;">
+								            <input type="text" name="opis" id="opis" class="otzivi" placeholder="Оставить комментарий" style="border:1px solid grey"/>
+									        <button type="submit" name="subm" class="fa fa-envelope-o fa-inverse center submit" id="submit-search"></button>
+							        	</form>
 								</table>
 							  </div>
 						</div>
@@ -116,9 +136,9 @@
 				
 				</div>
 			</div>	
-				<div class="col-md-4 col-sm-4 tovar-panel">
+				<div class="col-md-4 col-sm-4 tovar_panel">
 					<div class="formlist">
-						<h3 class="tovar-zagolovok">Матрасc Guleftec</h3>
+						<h3 class="tovar_zagolovok">Матрасc Guleftec</h3>
 					</div>
 					<div class="cena-select">
 					<span class="pull-left cena-tovar ">4 600 000 <span class="small rub">руб</span><span>
@@ -154,17 +174,17 @@
 	<div class="container block">
 	<div class="row ">
 		<h3 class="text-center razdel">Новое поступление</h3><hr class="indexhtml">
-			<ul>
+			<ul itemscope itemtype="http://schema.org/Product">
 					<div class="col-md-3 col-sm-3 fig">
 					<figure class=" tovar">
 					<div class="zagolovok">
-						<h5><a href="#" class="tui">Матрас DreamLine<br>
+						<h5 itemprop="description"><a href="#" class="tui" >Матрас DreamLine<br>
 						Balance Дачный TFK</a></h5>
-						<p class="type_tovar"><a href="#" class="tui">Матрасы</a></p>
+						<p class="type_tovar" itemprop="category"><a href="#" class="tui">Матрасы</a></p>
 						</div>
 						<a href="#"><img src="images/ger.png" class="snimok"></a>
 						<figcaption>
-						<span class="pull-left cena hotkey">6 307 900 <span class="small">руб</span></span>
+						<span class="pull-left cena hotkey" itemprop="price">6 307 900 <span class="small">руб</span></span>
 						<a href="#" class="pull-right hotkey" role="button">
 							<img src="images/sez.png" class="inter korzina"></a>
 						</a>
@@ -177,13 +197,13 @@
 					<div class="col-md-3 col-sm-3 fig">
 					<figure class=" tovar">
 					<div class="zagolovok">
-						<h5><a href="#" class="tui">Матрас DreamLine<br>
+						<h5 itemprop="description"><a href="#" class="tui" >Матрас DreamLine<br>
 						Balance Дачный TFK</a></h5>
-						<p class="type_tovar"><a href="#" class="tui">Матрасы</a></p>
+						<p class="type_tovar" itemprop="category"><a href="#" class="tui">Матрасы</a></p>
 						</div>
 						<a href="#"><img src="images/ger.png" class="snimok"></a>
 						<figcaption>
-						<span class="pull-left cena hotkey">6 307 900 <span class="small">руб</span></span>
+						<span class="pull-left cena hotkey" itemprop="price">6 307 900 <span class="small">руб</span></span>
 						<a href="#" class="pull-right hotkey" role="button">
 							<img src="images/sez.png" class="inter korzina"></a>
 						</a>
@@ -196,13 +216,13 @@
 					<div class="col-md-3 col-sm-3 fig">
 					<figure class=" tovar">
 					<div class="zagolovok">
-						<h5><a href="#" class="tui">Матрас DreamLine<br>
+						<h5 itemprop="description"><a href="#" class="tui" >Матрас DreamLine<br>
 						Balance Дачный TFK</a></h5>
-						<p class="type_tovar"><a href="#" class="tui">Матрасы</a></p>
+						<p class="type_tovar" itemprop="category"><a href="#" class="tui">Матрасы</a></p>
 						</div>
 						<a href="#"><img src="images/ger.png" class="snimok"></a>
 						<figcaption>
-						<span class="pull-left cena hotkey">6 307 900 <span class="small">руб</span></span>
+						<span class="pull-left cena hotkey" itemprop="price">6 307 900 <span class="small">руб</span></span>
 						<a href="#" class="pull-right hotkey" role="button">
 							<img src="images/sez.png" class="inter korzina"></a>
 						</a>
@@ -215,13 +235,13 @@
 					<div class="col-md-3 col-sm-3 fig">
 					<figure class=" tovar">
 					<div class="zagolovok">
-						<h5><a href="#" class="tui">Матрас DreamLine<br>
+						<h5 itemprop="description"><a href="#" class="tui" >Матрас DreamLine<br>
 						Balance Дачный TFK</a></h5>
-						<p class="type_tovar"><a href="#" class="tui">Матрасы</a></p>
+						<p class="type_tovar" itemprop="category"><a href="#" class="tui">Матрасы</a></p>
 						</div>
 						<a href="#"><img src="images/ger.png" class="snimok"></a>
 						<figcaption>
-						<span class="pull-left cena hotkey">6 307 900 <span class="small">руб</span></span>
+						<span class="pull-left cena hotkey" itemprop="price">6 307 900 <span class="small">руб</span></span>
 						<a href="#" class="pull-right hotkey" role="button">
 							<img src="images/sez.png" class="inter korzina"></a>
 						</a>
@@ -243,10 +263,10 @@
 				<div class="col-md-3 col-sm-3">
 					<h4 class="foooter-zagolovok">Контакты</h4>
 					<address>
-						<ul class="footer">
-							<li><a href=""> <p>Тел.: +375(29)111 11 11</p></a></li>
-							<li><a href=""><p>E-mail: info@matrass.by</p></a> </li>
-							<li><p>Адрес: г.Минск, ул.Тимирязева,<br>дом 67, офис 1813</p></li>
+						<ul class="footer"  itemscope itemtype="http://schema.org/LocalBusiness">
+							<li itemprop="telephone"><a href=""> <p>Тел.: +375(29)111 11 11</p></a></li>
+							<li itemprop="email"><a href=""><p>E-mail: info@matrass.by</p></a> </li>
+							<li itemprop="address" itemtype="http://schema.org/PostalAddress"><a href=""><p>Адрес: г.Минск, ул.Тимирязева,<br>дом 67, офис 1813</p></a></li>
 						</ul>
 					</address>
 				</div>
@@ -295,9 +315,9 @@
 						
 				</div>
 			
-			<div class="col-md-12 col-sm-12" id="underground">
+			<div class="col-md-12 col-sm-12" id="underground"  itemscope itemtype="http://schema.org/LocalBusiness">
 			<p class="rules-left">© 2015-2016 Mattrass. Все права защищены</p>
-			<p class="author-right">Разрабокта: INTELLECT-IT</p>
+			<p class="author-right" itemprop="funder">Разрабокта: INTELLECT-IT</p>
 			</div>
 			</div>
 		</div>
@@ -309,5 +329,52 @@
     <script src="owl-carousel/jquery.min.js"></script>
 	<script src="owl-carousel/owl.carousel.js"></script>
 	<script src="owl-carousel/tst.js"></script>
+	<script type="application/ld+json">
+		{
+		"@context":"http://schema.org",
+		"@type":"LocalBusiness",
+		"product": [
+        {
+            "@type": "Product",
+            "description": "Матрас DreamLine",
+            "category": ["Матрасы", "Матрасc"],
+            "price": "6 307 900"
+        },
+        {
+            "@type": "Product",
+            "description": "Матрас DreamLine",
+            "category": ["Матрасы", "Матрасc"],
+            "price": "6 307 900"
+        },
+        {
+            "@type": "Product",
+            "description": "Матрас DreamLine",
+            "category": ["Матрасы", "Матрасc"],
+            "price": "6 307 900"
+        },
+        {
+            "@type": "Product",
+            "description": "Матрас DreamLine",
+            "category": ["Матрасы", "Матрасc"],
+            "price": "6 307 900"
+        },
+		"telephone":"+375(29)111 11 11",
+		"email":"info@matrass.by",
+		"address":{
+			"@type":"PostalAddress",
+			"addressLocality":"Минск",
+			"streetAddress":"ул. Тимирязева,67"
+		},
+		"founder":"Разрабокта: INTELLECT-IT",
+		}
+</script>
+<script type="text/javascript" src="js/comments.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/photobox.js"></script>
+<script type="text/javascript">
+$( function() {
+$( '.gallery a' ).photobox();
+} );
+</script>
 </body>
 </html>

@@ -4,9 +4,9 @@ body{
 }
 
 body a{
-	-moz-transition: all .2s ease-out;
-	-o-transition: all .2s ease-out;
-	-webkit-transition: .2s ease-out;
+	-moz-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	-webkit-transition: .1s ease-out;
 }
 
 body a:hover{
@@ -58,7 +58,7 @@ div.header{
 }
 
 div.upperlvl{
-	width: 800px;
+	width: 799px;
 	height: 49px;
 	background-color:#fffeff;
 	margin-bottom: 1px;
@@ -74,12 +74,12 @@ div.lowlvl{
 
 div.topheader{
 	height: 49px;
-	border-right: 1px solid #f1eff1;
+	
 	display: inline-block;
 	float: left;
-	-moz-transition: all .2s ease-out;
-	-o-transition: all .2s ease-out;
-	-webkit-transition: .2s ease-out;
+	-moz-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	-webkit-transition: .1s ease-out;
 }
 
 
@@ -89,7 +89,7 @@ div.topheader{
 }
 
 
-.good li{
+.good li a{
 	display: inline-block;
 	float: left;
 	padding: 15px 23px;
@@ -97,12 +97,12 @@ div.topheader{
 
 
 .lowheader{
--moz-transition: all .2s ease-out;
-	-o-transition: all .2s ease-out;
-	-webkit-transition: .2s ease-out;
+-moz-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	-webkit-transition: .1s ease-out;
 }
 
-.lowheader:hover{
+.lowheader a:hover{
 	background-color:#E1E3DE; 
 	color:#000;
 }
@@ -170,7 +170,7 @@ a.asell{
 
 input[type="text"] {
 	line-height: 47px;
-	width: 268px;
+	width: 266px;
     border: none; 
     outline: none; 
     -webkit-appearance: none; 
@@ -178,12 +178,50 @@ input[type="text"] {
     padding-left: 23px;
    }
 
+.search-otzivi{
+	position: relative;
+	margin-top: 2px;
+}
+
+
+
+form:hover .tooltiptext{
+	visibility: visible;
+}
+
+.tooltiptext {
+	visibility: hidden;
+    width: 300px;
+    background-color: #D7D5D5 ;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 51%;
+
+}
+
+.tooltiptext::after {
+     content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 18%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #D7D5D5 transparent;
+}
+
+
 button#submit-poisk {
 	margin-right:7px; 
-    width: 30px; /* Ширина кнопки */
-    line-height: 30px; /* Высота кнопки */
+    width: 30px; 
+    line-height: 30px; 
     vertical-align: middle;
-    border: none; /* Убираем рамку */
+    border: none; 
     background-color: white;
     color:black;
     font-size: 18px;
@@ -196,7 +234,7 @@ button#submit-poisk:hover{
 
 div.poisk{
 	padding: 0;
-
+border-left: 1px solid #f1eff1;
 }
 
 div.work-panel{
@@ -249,10 +287,11 @@ option{
 	font:bold 15px Ubuntu;
 	background:url(../images/nado.png) #24a6f3 no-repeat;
 	border:none;
+	opacity: 1;
 }
 
 #Move-tovar:hover{
-	background:lightblue;
+	opacity: 0.5;
 }
 
 .podbor-zagolovok{
@@ -280,10 +319,13 @@ span.name-slide{
 	
 }
 
+.owl-next{
+	right:2%;
+}
 
 #owl-demo{
 	position: relative;
-width:720px;
+width:704px;
 box-sizing: border-box;
 overflow: hidden;
 }
@@ -430,6 +472,7 @@ figure.tovar{
 	outline: none; 
     -webkit-appearance: none; 
 	color:#303030;
+
 }
 
 select{
@@ -456,11 +499,13 @@ div.fig{
 	-webkit-transition: .1s ease-out;
 	margin:0 1px 1px 0; 
 	max-width: 234px;
+	opacity: 0.9;
 }
 
 div.fig:hover{
  	box-shadow: 0 0 30px rgba(0,0,0,0.7);
- 	z-index: 700;
+ 	z-index: 2;
+ 	opacity: 1;
 }
 
 span.cena{
@@ -534,6 +579,10 @@ ul.footer li a p:hover{
 
 }
 
+
+.gallery li{
+	display: inline-block;
+}
 h4.foooter-zagolovok{
 	margin: 60px 0 18px 0;
 	font-weight: bold;
@@ -677,7 +726,7 @@ div.tovar-window{
 }
 
 
-div.tovar-panel{
+div.tovar_panel{
 	width: 313px;
 	font-family: 'Ubuntu', sans-serif;
 	background-color: #fffeff;
@@ -705,7 +754,7 @@ span.cena-tovar{
 	font-size: 16px;
 }
 
-.tovar-zagolovok{
+.tovar_zagolovok{
 	margin:0;
 	padding: 28px 0 28px 20px;
 	border-bottom: 1px solid #f1eff1;
@@ -723,8 +772,7 @@ button#submit-like {
    }
 
 button#submit-like:hover{
-	background-color: #f1eff1; 
-	color:black;
+	sopacity: 0.5;
 }
 
    button#submit-sell {
@@ -746,7 +794,7 @@ img.img-harka{
 div.message{
 	height: auto;
 	max-width: 276px;
-	padding: 22px 0 6px 20px;
+	padding: 22px 0 11px 20px;
 	text-align: justify;
 }
 
@@ -760,9 +808,20 @@ div.harkota-otzivi{
 	padding: 22px 0 22px 22px;
 
 }
+.otzivi{
+	  margin:5px 5px 0 0;
+
+}
 
 .sub-buttons{
 	padding: 22px 0 22px 22px;
+}
+
+#tab1 tbody {
+      display: block;
+      height: 150px;
+      overflow: hidden;
+      overflow-y: auto;
 }
 
 table{
@@ -821,14 +880,13 @@ th.opis{
 
 .categori-list{
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 14px;
 	margin-bottom: 15px;
 }
 
 .categori-list li {
 	padding: 15px 0;
 	text-align: left;
-	padding-left: 45px;
 }
 
 .categori-list li:hover {
@@ -911,6 +969,7 @@ margin-top: 50px;
 
 .blike{
 	width: 166px;
+	border-left: 1px solid #f1eff1;
 }
 
 .badge-sell-word{
@@ -933,6 +992,7 @@ margin-top: 50px;
 .bsell{
 	width: 139px;
 	border: none;
+	border-left: 1px solid #f1eff1;
 }
 
 .sellCircle{
@@ -979,11 +1039,15 @@ border-bottom: 1px dotted #CCC;
 	margin-bottom: 2px;
 }
 
+.star{
+	padding: 0;
+}
+
 .bread { 
 	list-style: none; 
 	overflow: hidden; 
 	font: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: 13px;
 	margin: 23px 0;
 	padding: 0;
 }
@@ -1001,5 +1065,6 @@ border-bottom: 1px dotted #CCC;
 	color: #3096c6;
 }
 .bread li a:after { 
-	content: "→"; 
+	content: " → ";
+	margin: 0 5px; 
 }
