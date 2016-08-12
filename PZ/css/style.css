@@ -819,7 +819,8 @@ div.harkota-otzivi{
 
 #tab1 tbody {
       display: block;
-      height: 150px;
+      height: 72px;
+      width: 100%;
       overflow: hidden;
       overflow-y: auto;
 }
